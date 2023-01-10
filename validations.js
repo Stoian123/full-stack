@@ -12,7 +12,7 @@ export const registerValidation = [
   body("avatarUrl", "Not valid URL").optional().isURL(),
 ];
 
-export const posrCreateValidation = [
+export const postCreateValidation = [
   body("title", "Enter title").isLength({ min: 3 }).isString(),
   body("text", "Enter text").isLength({ min: 3 }).isString(),
   body("tags", "Enter tags(Array)").optional().isString(),
